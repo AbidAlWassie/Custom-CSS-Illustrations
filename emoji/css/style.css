@@ -69,13 +69,19 @@ body {
   left: calc(var(--emoji-size) * 0.5);
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  background-color: black;
 }
 
 .smile {
   --mouth-height: calc(var(--emoji-size) * 0.3);
-  background-color: black;
   width: calc(var(--emoji-size) * 0.6);
   height: var(--mouth-height);
   border-radius: 5% 5% var(--mouth-height) var(--mouth-height);
+}
+
+.open-mouth {
+  width: calc(var(--emoji-size) * 0.25);
+  height: calc(var(--emoji-size) * 0.3);
+  border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */
