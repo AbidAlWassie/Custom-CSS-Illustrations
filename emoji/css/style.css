@@ -66,16 +66,13 @@ body {
 .mouth {
   position: absolute;
   bottom: calc(var(--emoji-size) * 0.15);
-  left: calc(var(--emoji-size) * 0.21);
+  left: calc(var(--emoji-size) * 0.5);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .smile {
   --mouth-height: calc(var(--emoji-size) * 0.3);
-  position: absolute;
-  bottom: calc(var(--emoji-size) * 0.15);
-  left: calc(var(--emoji-size) * 0.5);
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   background-color: black;
   width: calc(var(--emoji-size) * 0.6);
   height: var(--mouth-height);
