@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(24, 24, 24);
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.emoji {
+  --emoji-size: 200px;
+  background: transparent !important;
+  margin: 1rem;
+  width: var(--emoji-size);
+  height: var(--emoji-size);
+}
+
+.head {
+  background: #fec741;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.eyes {
+  position: absolute;
+  top: calc(var(--emoji-size) * 0.25);
+  left: calc(var(--emoji-size) * 0.5);
+}
+
+.eye {
+  position: absolute;
+  width: calc(var(--emoji-size) * 0.075);
+  height: calc(var(--emoji-size) * 0.15);
+  background: black;
+  border-radius: 50%;
+}
+
+.eye-left {
+  left: calc(var(--emoji-size) * -0.2);
+}
+
+.eye-right {
+  right: calc(var(--emoji-size) * -0.2);
+}
+
+.mouth {
+  position: absolute;
+  bottom: calc(var(--emoji-size) * 0.15);
+  left: calc(var(--emoji-size) * 0.21);
+}
+
+.smile {
+  --mouth-height: calc(var(--emoji-size) * 0.3);
+  position: absolute;
+  bottom: calc(var(--emoji-size) * 0.15);
+  left: calc(var(--emoji-size) * 0.5);
+  transform: translateX(-50%);
+  // --mouth-height: calc(var(--emoji-size) * 0.3);
+  background-color: black;
+  width: calc(var(--emoji-size) * 0.6);
+  height: var(--mouth-height);
+  border-radius: 5% 5% var(--mouth-height) var(--mouth-height);
+}
