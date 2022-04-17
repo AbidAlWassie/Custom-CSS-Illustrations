@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #181818;
+  color: white;
+  margin: 0;
+  font-family: 'Open Sans', Poppins, Arial, sans-serif;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Poppins;
+  -webkit-transform: scale(20);
+          transform: scale(20);
+}
+
+.circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #006fca;
+  border-radius: 50%;
+  background: #008cff;
+  z-index: 1;
+}
+
+.circle span {
+  position: relative;
+  top: 0;
+}
+
+.half-circle {
+  position: absolute;
+  top: 0px;
+  -webkit-transform: translate(-25%, 50%) rotate(90deg);
+          transform: translate(-25%, 50%) rotate(90deg);
+  height: 15px;
+  width: 30px;
+  background-color: #006fca;
+  border-radius: 0 0 150px 150px;
+}
+
+.logo .firstLetter {
+  font-size: 20px;
+  color: white;
+  border-radius: 50%;
+  z-index: 1;
+  position: fixed;
+}
+
+.logo .otherLetters {
+  position: relative;
+  right: 6.2px;
+  line-height: 0.6px;
+  z-index: 2;
+}
+/*# sourceMappingURL=style.css.map */

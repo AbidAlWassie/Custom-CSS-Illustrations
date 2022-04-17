@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(24, 24, 24);
+  color: white;
+  margin: 0;
+  font-family: 'Open Sans', Poppins, Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  // width: 100%;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Poppins;
+  transform: scale(20);
+  
+}
+
+
+.circle {
+  display: flex;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #006fca;
+  border-radius: 50%;
+  background: #008cff;
+  z-index: 1;
+}
+
+.circle span {
+  position: relative;
+  top: 0;
+}
+
+.half-circle {
+  position: absolute;
+  top: 0px;
+  // left: 7.4px;
+  // margin-left: auto;
+  transform: translate(-25%, 50%) rotate(90deg);
+  height: 15px;
+  width: 30px;
+  // border: 1px solid #0077d8;
+  background-color: #006fca;
+  border-radius: 0 0 150px 150px;
+}
+
+.logo .firstLetter {
+  font-size: 20px;
+  color: white;
+  border-radius: 50%;
+  z-index: 1;
+  position: fixed;
+}
+
+// relative right-[6px] tracking-[0.6px] z-[2]
+.logo .otherLetters {
+  position: relative;
+  right: 6.2px;
+  line-height: 0.6px;
+  z-index: 2;
+}
